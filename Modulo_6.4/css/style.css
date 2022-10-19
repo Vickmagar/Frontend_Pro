@@ -1,0 +1,49 @@
+header, footer{
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+    background-color: #db9090;
+    font-size: 1.4rem;
+}
+
+
+.cards{
+    background-color: rgb(131, 237, 49);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.card {
+    background-color: #f09e9e;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.cards2{
+    margin-top: 10px;
+    background-color: rgb(131, 237, 49);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 5rem;
+}
+
+
+footer{
+    padding: 10px;
+    background-color: #db9090;
+}
+
+@media screen and (max-width: 60em){
+    main {
+       flex-direction: column;
+    }
+
+    main article, main aside {
+        flex: 1;
+    }
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <p>El formulario que presento a continuación es un check list que se ocupara para una empresa automotriz, se utilizara para un  
+        punto de inspección, donde el carro cumpla con las pruebas electricas, antes de ser enviado a las agencias
+        para su venta final.
+    </p>
+    
+    <h1>CheckList Inspección Eléctrica MOTORS MEXICO</h1> 
+
+    <form>
+        <fieldset>
+            <legend>Información del Inspector</legend>
+            <div>
+                <label for="name">Nombre del Inspector</label> 
+                <input type="text"" id="name" name="name" required placeholder="Nombre del Inpector">
+                <label for="area">Tipo de Inspector</label>
+                <select id="area" name="area">
+                    <option value="calidad1">Seleccione una Opción</option>
+                    <option value="calidad2">Inspector_Eléctrico</option>
+                    <option value="calidad3">Inspector_Motor</option>
+                    <option value="calidad4">Inspector_Pintura</option>
+                    <option value="calidad5">Inspector_Linea</option>
+                </select> 
+                <label for="NumSerie">Matricula</label> 
+                <input type="text" id="NumSerie" name="NumSerie" required placeholder="Ingresa tu matricula">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+
+        </fieldset>
+    
+
+        <fieldset>
+            <legend>Información del Carro</legend>
+            <div>
+            <label for="serie">Numero de Serie</label>
+            <input type="text" id="serie" name="serie" required placeholder="Ingresa el Num de Serie">
+            <label for="motor">Numero de Motor</label>
+            <input type="text" id="motor" name="motor" required placeholder="Num de Motor">
+            <label for="area">Modelo</label>
+                <select id="area" name="area">
+                    <option value="modelo1">Seleccione una Opción</option>
+                    <option value="modelo2">Carro Pasajeros</option>
+                    <option value="modelo3">SUV</option>
+                    <option value="modelo4">Camioneta</option>
+                    <option value="modelo5">Deportivo</option>
+                </select>
+            </div>
+        </fieldset>
+
+ 
+        
+       <fieldset>
+        <legend>Inspección Eléctrica</legend>
+            <table border="1" cellpadding="10">
+                <caption>CheckList</caption>
+                <thead bgcolor="yellow">
+                    <tr>
+                        <th>Tipo de Inpección</th>
+                        <th>Cumple</th>
+                        <th>No Cumple</th>
+                        <th>Pendiente de realizar</th>
+                    </tr>
+                </thead>
+
+                <tbody align="center">
+                    <tr>
+                        <td>Encendido de luces Delanteras</td>
+                        <td><input type="checkbox" id="luzdCumple" name="luzdCumple" value=""></td>
+                        <td><input type="checkbox" id="luzdNocumple" name="luzdNocumple" value=""></td>
+                        <td><input type="checkbox" id="luzdPendiente" name="luzdPendiente" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Encendido de luces Traseras</td>
+                        <td><input type="checkbox" id="luztCumple" name="luztCumple" value=""></td>
+                        <td><input type="checkbox" id="luztNocumple" name="luztNocumple" value=""></td>
+                        <td><input type="checkbox" id="luztPendiente" name="luztPendiente" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Encendido de luces Intermitentes</td>
+                        <td><input type="checkbox" id="luziCumple" name="luziCumple" value=""></td>
+                        <td><input type="checkbox" id="luziNocumple" name="luziNocumple" value=""></td>
+                        <td><input type="checkbox" id="luziPendiente" name="luziPendiente" value=""></td>
+                    </tr>
+                
+            </table> 
+            <h3>Deja una observación</h3>
+            <textarea name="YourMessage:" rows="10" cols="30"></textarea><br>
+        </fieldset>
+    </form>
+    <br>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+    </div>
+   
+
+    
+</body>
+</html>

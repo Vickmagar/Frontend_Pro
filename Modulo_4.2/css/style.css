@@ -1,0 +1,10 @@
+p{
+    font-family: 'Roboto Condensed', sans-serif,Arial;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    line-height: 3;
+    word-spacing: 5px;
+    text-shadow: 10px 10px 15px #000;
+}

@@ -1,0 +1,74 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: rgb(89, 194, 194);
+    font-size: 14px;
+    font-family: 'Rajdhani', sans-serif,Arial,Helvetica;
+}
+
+.container{
+    width: 80%;
+    height: 400px;
+    background-color: rgb(12, 75, 75);
+    position: relative;
+    left: 50px;
+    background-image: url("https://logos-world.net/wp-content/uploads/2020/09/Wikipedia-Logo-2003-present.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal{
+    width: 400px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-shadow: 5px 5px 20px 10px #333;
+}
+
+.modal i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.modal button {
+    width: 200px;
+    text-align: center;
+    border: 0;
+    border: 1px solid rgb(12, 75, 75);
+    background-color: rgb(12, 75, 75);
+    color: rgb(214, 212, 231);
+    cursor: pointer;
+    transition: all .25s linear;
+}
+
+.modal button:hover {
+    background-color: #fff;
+    color: rgb(7,54,54);
+   
+}
+
+header {
+    width: 100%;
+    background-color: blueviolet;
+    position: fixed;
+    z-index: 10;
+    
+}
+
+header p {
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}

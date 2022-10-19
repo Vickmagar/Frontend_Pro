@@ -1,0 +1,110 @@
+$mainColor: rgb(0, 0, 0);
+$padding: 20px;
+$fontFamily: "Rajdhani",Arial, Helvetica, sans-serif;
+$colorWhite: rgb(245, 245, 245);
+$gray: rgb(134, 134, 134);
+
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin shadowContainer($blur, $shadowColor, $bgColor) {
+    box-shadow: 0px 0px $blur $shadowColor;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $bgColor;
+}
+
+%link{
+    text-decoration: none;
+    color: $colorWhite;
+}
+
+body{
+    font-family: $fontFamily;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header{
+   @include flexbox;
+   background-color: $gray;
+
+    img {
+        width: 140px;
+    }
+
+    nav {
+        @include flexbox;
+       
+
+        a{
+            gap: 10px;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    }
+
+    article{
+        @include flexbox;
+
+        i{
+            gap: 10px;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+main{
+    article {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        @include shadowContainer(10px, rgb(239, 243, 9), $mainColor);
+        
+        &:first-child {
+            @include shadowContainer(10px, green, red);
+        }  
+
+        &.three {
+            @include shadowContainer(10px, rgb(210, 16, 84), rgb(0, 0, 0));
+        }
+    }
+
+}
+
+
+
+
+footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $mainColor;
+    @include flexbox;
+
+    article {
+
+        img {
+            width: 80%;
+        }
+
+        nav {
+            @include flexbox;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        a {
+            @extend %link;
+        }
+
+        a {
+           display: block;
+           @extend %link; 
+        }
+
+    }
+}

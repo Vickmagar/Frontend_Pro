@@ -1,0 +1,52 @@
+header, footer{
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+    background-color: #db9090;
+    font-size: 1.4rem;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    background-color: rgb(131, 237, 49);
+}
+
+aside{
+    background-color: rgb(230, 98, 183);
+}
+
+main article {
+    flex: 2;
+}
+
+main aside {
+    flex: 1;
+}
+
+
+article, aside{
+    padding: 10px;
+    margin: 10px;
+}
+
+footer{
+    padding: 10px;
+    background-color: #db9090;
+}
+
+@media screen and (max-width: 60em){
+    main {
+       flex-direction: column;
+    }
+
+    main article, main aside {
+        flex: 1;
+    }
+}
+

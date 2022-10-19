@@ -1,0 +1,63 @@
+body {
+    font-family: "Rajdhani",Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+}
+
+.red {
+    border: 1px solid #000;
+    background-color: tomato;
+}
+
+.blue {
+    border: 1px solid #000;
+    background-color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    color: green;
+    border: 2px solid black;
+}
+
+.header {
+    background-color: antiquewhite;
+}
+
+.header .l-right {
+    float: right;
+}
+
+.header .l-align-center {
+    text-align: center;
+}
+
+.article {
+    width: 100%;
+}
+
+.article--title{
+    font-size: 4rem;
+}
+
+.article--text {
+    font-size: 2rem;
+}
+
+.nav--item.is-selected {
+    color: blue;
+}
+
+.button-large {
+    width: 500px;
+}
+

@@ -1,0 +1,69 @@
+*{
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+
+/*selector de elemento*/
+article{
+    background-color: bisque;
+}
+
+
+p, h2{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.btn-main{
+    color: rgb(229, 229, 240);
+    background-color: blueviolet;
+    font-weight: 700;
+    font-size: large;
+}
+
+.txt, .main-title{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+article .txt{
+    background-color: aqua;
+}
+
+article > p{
+    font-size: 8px;
+}
+
+section > p{
+    font-size: 60px;
+}
+
+input[type="text"]{
+    background-color: brown;
+}
+
+button:hover{
+    background-color: azure;
+}
+
+p:hover{
+    background-color: azure;
+}
+
+article > p:first-child{
+    font-size: 50px;
+}
+
+article > p:nth-child(2){
+    font-size: 30px;
+}
+
+
+article > p:last-child{
+    font-size: 100px;
+}
+

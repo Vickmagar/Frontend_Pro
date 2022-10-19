@@ -1,0 +1,41 @@
+header, footer{
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+    background-color: #db9090;
+    font-size: 1.4rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+article{
+    background-color: rgb(131, 237, 49);
+}
+
+aside{
+    background-color: rgb(49, 149, 237);
+}
+
+article, aside{
+    padding: 10px;
+    margin: 10px;
+}
+
+footer{
+    padding: 10px;
+    background-color: #db9090;
+    font-size: 1.4rem;
+}
+}
+
+@media screen and (max-width: 52em){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
