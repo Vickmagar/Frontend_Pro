@@ -1,0 +1,175 @@
+$mainColor: rgb(0, 0, 0);
+$padding: 20px;
+$fontFamily: "Rajdhani",Arial, Helvetica, sans-serif;
+$colorWhite: rgb(245, 245, 245);
+$gray: rgb(134, 134, 134);
+
+@function divideUnits($value, $quantity) {
+    $result: $value / $quantity;
+    @return $result;
+}
+
+@mixin avatar ($size, $type) {
+    width: $size;
+    height: $size;
+    background-color: cornflowerblue;
+    
+    @if $type == circle {
+        border-radius: 50%;
+    } @else {
+        border-radius: 10px;
+    }
+    
+}
+
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin shadowContainer($blur, $shadowColor, $bgColor) {
+    box-shadow: 0px 0px $blur $shadowColor;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $bgColor;
+}
+
+@mixin laptops {
+    @media  screen and (max-width: 70rem) { @content }    
+}
+
+@mixin tablets {
+    @media  screen and (max-width: 60rem) { @content }    
+}
+
+@mixin phones {
+    @media  screen and (max-width: 50rem) { @content }    
+}
+
+%link{
+    text-decoration: none;
+    color: $colorWhite;
+}
+
+body{
+    font-family: $fontFamily;
+}
+
+html, body, p, a {
+    margin: 0;
+}
+
+header {
+   @include flexbox;
+   background-color: $gray;
+   padding: 20px;
+   box-sizing: border-box;
+   align-items: center;
+
+    img {
+        width: 140px;
+    }
+
+    nav {
+        @include flexbox;
+        gap: 20px;
+
+       @include laptops{
+        display: none;
+       }
+       
+
+        a{
+          
+            font-weight: 700;
+            font-size: 1.5rem;
+            @extend %link;
+        }
+    }
+
+    article{
+        @include flexbox;
+        gap: 10px;
+
+        i{
+            cursor: pointer;
+            transition: all 300ms ease;
+            
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            &:first-child{
+                width: 24px;
+            }
+
+            &:last-child{
+                @include avatar(50px, $type: circle)
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+main {
+    article {
+        width: 300px;
+        height: divideUnits(200px, 2);
+        margin: 0 auto;
+        @include shadowContainer(10px, rgb(239, 243, 9), $mainColor);
+        
+        &:first-child {
+            @include shadowContainer(10px, green, red);
+        }  
+
+        &.three {
+            @include shadowContainer(10px, rgb(210, 16, 84), rgb(0, 0, 0));
+        }
+    }
+
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $mainColor;
+    @include flexbox;
+    @include phones{
+        flex-direction: column;
+    }
+
+    article {
+
+        img {
+            width: 80%;
+        }
+
+        nav {
+            @include flexbox;
+            flex-direction: column;
+            gap: 10px;
+
+            @include tablets{
+                flex-direction: row;
+            }
+        }
+
+        a {
+            @extend %link;
+
+           
+        }
+
+        a {
+           display: block;
+           @extend %link; 
+
+         
+        }
+
+    }
+}
