@@ -5,24 +5,28 @@
 header{
     padding: 20px 40px;
     border: 2px solid #666666;
-    
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .logo{
     width: 100px;
 }
 
-header nav{
-    display: inline-block;
-    float: right;
-    padding-top: 45px;
+header nav {
+    width: 300px;
+    background-color: chocolate;
+    
 }
 
 header  nav a{
     margin: 0 10px;
     display: inline-block;
-    width: 100PX;
+    width: 100px;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
     text-align: center;
+    justify-content: center;
 }
-

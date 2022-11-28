@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background-image:url(/Modulo_4.5_Actividad/img/Fondo5.svg);
+    height: 3400px;
+}
+
+header{
+    background-color: #111;
+    width: 100%;
+    height: 140PX;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1 solid #111;
+}
+
+header .logo{
+    width: 14%;
+    padding: 0px 20px;
+}
+
+header  a {
+    
+    color: #ffd500;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right: 50px;
+    border: 3px solid transparent;
+}
+
+header a:hover {
+	border: 1px solid #ffd500;
+}
+
+.images {
+    width:  100%;
+    padding: -5px 0px;
+    
+}
+
+.text{
+    width: 100%;
+    font-size: 3em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #111;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 40px auto 0;
+    gap: 30px;
+
+}
+
+.picture1{
+    width: 100%;
+   
+
+}
+
+.picture__text{
+    font-size: 4em;
+    position: relative;
+    top: -120px;
+    left: 20px;
+    text-decoration: none;
+    font-weight: 900;
+    color: #111;
+}
+
+.gift{
+    margin: 0 auto;
+    width: 35%;   
+    
+}
+
+.picture2{
+    width: 100%;
+    height: 600px;
+}
+
+.footer{
+    margin-top: 100px;
+    padding: 84px 0px;
+    background-color: #111;
+    width: 100%;
+    height: 124PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text2{
+    
+    color: #ffd500;
+    display: flex;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.icon img{
+    width: 100px;
+}
+
+.text3{
+    font-size: 4em;
+    font-weight: 900;
+    color: #ffd500;
+    padding: 0px 10px;
+}

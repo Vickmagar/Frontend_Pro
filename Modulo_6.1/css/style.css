@@ -9,19 +9,19 @@ div{
 div p{
     font-size: 15px;
     text-align: right;
-    line-height: 3;
+    line-height: 2;
 }
 
 @media screen and (max-width: 900px) and (min-width: 700px) {
     div {
-        width: 100%;
+        width: 50%;
         padding: 0;
         background-color: aqua;
     }
 
     div p {
-        font-size: 8px;
-        text-align: center;
+        font-size: 10px;
+        text-align: left;
         line-height: 1;
     }
 }

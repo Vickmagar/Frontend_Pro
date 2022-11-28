@@ -3,10 +3,32 @@ header, footer{
 }
 
 header{
+    width: 100%;
     padding: 10px;
     background-color: #db9090;
     font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+header img{
+    width: 100px;
+}
+
+header nav{
+    width: 20%;
+    display: flex;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: darkcyan;
+    font-size: 16px;
+    gap: 10px;
+}
+
 
 main{
     display: grid;
@@ -31,11 +53,64 @@ footer{
     background-color: #db9090;
     font-size: 1.4rem;
 }
+
+.code__flex{
+    display: flex;
+    flex-direction: row;
 }
+
+.code__flex-text{
+    background-color: rgb(131, 237, 49);
+}
+
+.code__flex-text2{
+    background-color: rgb(49, 149, 237);
+}
+
+.code__flex-text{
+    flex: 2;
+}
+
+.code__flex-text2{
+    flex: 1;
+}
+
+.code__flex-text, .code__flex-text2{
+    padding: 10px;
+    margin: 10px;
+}
+
+.cardst{
+    width: 100%;
+}
+
+.cards{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 10rem;
+}
+
+.card{
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 
 @media screen and (max-width: 52em){
     main{
         grid-template-columns: 1fr;
     }
+
+    .code__flex {
+        flex-direction: column;
+    }
+
+    .code__flex-text, .code__flex-text2{
+        flex: 1;
+    }
+
+    
 }
 

@@ -1,0 +1,174 @@
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.titles{
+    width: 100$;
+    font-size: clamp(2rem 5vw 3rem)
+}
+
+.title {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.text-main{
+    width: 100%;
+    font-size: 17px;
+}
+
+.main-container h2 {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.main-container p:last-child{
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.main-container2{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(242, 61, 29);
+}
+
+.title2 {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.text-main2{
+    width: 100%;
+    font-size: 17px;
+}
+
+.text-title {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.imagen{
+    width: 50%;
+    margin: 0 auto;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img {
+    width: 80%;   
+}
+
+.btn {
+    width: 50%;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+button {
+    margin: 0 auto;
+    width: 60%;
+    border: 1px solid beige;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    transition: all 300ms ease;
+}
+
+button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+@media screen and (max-width: 70em){
+    
+    .main-container{
+        width: 100%;
+        background-color: chartreuse;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+
+    .main-container h2{
+        font-size: 12px;
+    }
+
+    .text-main, .main-container p:last-child{
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width: 60em){
+    
+    .main-container2{
+        width: 100%;
+        background-color: rgb(96, 19, 230);
+    }
+
+    .title2{
+        font-size: .9rem
+    }
+
+    .text-title2{
+        font-size: .9rem;
+    }
+
+    .text-main2{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 50em){
+
+    html {
+        font-size: .6rem;
+    }
+}
+
+
+@media screen and (max-width: 40em){
+
+    html {
+        font-size: .4rem;
+    }
+
+    .imagen img {
+        width: 40%;   
+    }
+    
+}
+
+@media (hover:hover){
+    button:hover{
+        background-color: #fff;
+        color: black;
+    }
+    
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: #333;
+        color: #fff;
+    }
+}
