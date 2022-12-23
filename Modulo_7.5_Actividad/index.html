@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arquitectura BEM</title>
-</head>
-<body>
-    <header>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="phttps://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bob's Hamburguers</title>
+  </head>
+  <body>
+ 
+    <header class="header">
+      <img class="header__logo" src="img/logobobs3.svg" alt="Logo" />
+      <nav class="header__nav">
+        <a class="header__link" href="#">HOME</a>
+        <a class="header__link" href="#">MENU</a>
+        <a class="header__link" href="#">CONTACT</a>
+      </nav>
+      <img class="header__menu" src="img/menu.svg" alt="Menu">
     </header>
 
+    <main>
+    
+      <article class="principal">
+        <img src="img/img_header.svg" class="principal__images" alt="Image" />
+        <p class="principal__text">Select your favorite Hamburguer</p>
+      </article>
 
+      <article class="products">
+        <section class="products__select">
+          <img class="products__images" src="img/Hamburger1.svg" alt="Logo Hamburguer"/>
+          <button class="btn">Burguers</button>
+        </section>
+        <section class="products__select">
+          <img class="products__images" src="img/Snacks1.svg" alt="Logo Snacks" />
+          <button class="btn">Snacks</button>
+        </section>
 
+        <section class="products__select">
+          <img class="products__images" src="img/HotDog1.svg" alt="Logo HotDog" />
+          <button class="btn">Hot dog</button>
+        </section>
+        <section class="products__select">
+          <img class="products__images" src="img/Sweet1.svg" alt="Logo Sweet" />
+          <button class="btn">Sweets</button>
+        </section>
+      </article>
+      <a href="#" class="promotion__text">Armala con tus amigos</a>
+      <article class="promotion">
+        <img class="promotion__images" src="assets/flyer.svg" alt="Logo flyer" />
+      </article>
+    </main>
 
-</body>
+    <footer class="footer">
+      
+      <img class="footer__logo" src="img/logobobs3.svg" alt="Logo" />
+      <article class="footer__text">
+        <p>Siguenos en:</p>
+      <section class="footer__text-icon">
+          <i><img src="assets/facebook.svg" alt="" /></i>
+          <i><img src="assets/instagram.svg" alt="" /></i>
+      </section>
+      </article>
+      <section class="footer__text2">
+        <p>Pedidos al: <br> 7711287655</p>
+      </section>
+      
+    </footer>
+  </body>
 </html>
