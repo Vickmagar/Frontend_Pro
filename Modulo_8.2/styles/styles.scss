@@ -1,10 +1,17 @@
-$mainColor: rgb(0, 0, 0);
+$mainColor: rgb(79, 70, 183);
 $fontFamily: "Rajdhani",Arial, Helvetica, sans-serif;
 $colorWhite: rgb(245, 245, 245);
 
 @mixin flexbox {
     display: flex;
     justify-content: space-between;
+}
+
+@mixin shadowC {
+    box-shadow: 0px 0px 10px rgb(239, 243, 9);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(239, 243, 9);
 }
 
 @mixin shadowContainer($blur, $shadowColor, $bgColor) {
@@ -39,6 +46,14 @@ main{
         &.three {
             @include shadowContainer(10px, rgb(210, 16, 84), rgb(0, 0, 0));
         }
+
+        &.conta {
+            width: 500px;
+            height: 500px;
+            @include shadowC;
+        }
+
+
     }
 
 }
