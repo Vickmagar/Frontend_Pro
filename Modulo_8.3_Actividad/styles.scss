@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
 $mainColor: #111;
 $linkColor: #fff;
 
@@ -8,18 +15,18 @@ $linkColor: #fff;
   gap: 10px;
   margin-top: 18px;
   margin-left: 10px;
-
 }
+@mixin menuPlaylist{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
 @mixin icone{
   width: 27px;
-}
-
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -48,7 +55,10 @@ body {
     text-decoration: none;
     color: $linkColor;
   }
-
+  
+  .header__playlist{
+    @include menuPlaylist();
+  }
   
 }
 
