@@ -80,9 +80,7 @@
 }
 
 .header div{
-    width: 200px;
-    padding: 20px 0;
-    background-color: aqua;
+    grid-area: header;
 
 
 }
@@ -98,22 +96,4 @@
     grid-area: footer;
  }
 
- .grid-contas6{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 150px 150px;
-    width: 100%;
-    background-color: rgb(128, 42, 62);
-    gap: 10px;
-    grid-template-areas:
-        "headers headers headers"
-        "contents contents sidebars"
-        "footers footers footers"
-    ;
-}
-
-
-
-.grid-contas6 div{
-    background-color: rgb(229, 229, 33);
-}
+ 
